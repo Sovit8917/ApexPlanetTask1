@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Task 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #f6f9fc, #e0f7fa);
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #16a085;
+      margin-top: 40px;
+    }
+    p, ul {
+      font-size: 1.1em;
+      line-height: 1.7em;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    img {
+      width: 300px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    .highlight {
+      color: #2980b9;
+      font-weight: 600;
+    }
+    button {
+      display: block;
+      margin: 40px auto 0;
+      padding: 14px 28px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    button:hover {
+      background-color: #1f8e4d;
+      transform: translateY(-2px);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 60px;
+    }
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Web Development</h1>
+  </header>
+
+  <section>
+    <h2>HTML: Building Blocks of the Web</h2>
+    <p>This is a paragraph about <span class="highlight">HTML</span>, which stands for HyperText Markup Language. It is used to structure content on the web.</p>
+    <ul>
+      <li>Headings</li>
+      <li>Paragraphs</li>
+      <li>Images</li>
+      <li>Links</li>
+    </ul>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
+
+    <h2>CSS: Styling the Web</h2>
+    <p><span class="highlight">CSS</span> (Cascading Style Sheets) is used to style HTML elements. You can change colors, fonts, spacing, and layout.</p>
+    <ul>
+      <li>Font styling</li>
+      <li>Color and background</li>
+      <li>Margins and padding</li>
+      <li>Responsive design</li>
+    </ul>
+
+    <h2>JavaScript: Making Webpages Interactive</h2>
+    <p><span class="highlight">JavaScript</span> is used to create dynamic interactions on webpages. For example, you can make buttons respond to clicks.</p>
+
+    <button onclick="showAlert()">Click Me for Alert</button>
+  </section>
+
+  <footer>
+    &copy; 2025 ApexPlanet Software Pvt Ltd. All rights reserved.
+  </footer>
+
+  <script>
+    function showAlert() {
+      alert("🎉 Great job! You just clicked a JavaScript-powered button.");
+    }
+  </script>
+</body>
+</html>
